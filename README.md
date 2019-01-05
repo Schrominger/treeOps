@@ -6,4 +6,4 @@ this would be quite useful when one want to enumerate or build some nested expre
 Try to be general !
 
 
-**See docs.md. **
+**See docs.md.**
