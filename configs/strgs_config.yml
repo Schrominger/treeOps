@@ -1,0 +1,10 @@
+
+#   op0(op1a(op2a(op3a('Close'), op3b('Open'))),op1b(op2b('Open')))
+TEMPLATE:
+   - OP0: # 第一层
+         - OP1A: # 第二层
+           - op2a: # 第三层
+               - op3a: Close # 第四层
+               - op3b: Open # 第四层
+         - op1b:  # 第二层
+           - op2b: Open  # 第三层

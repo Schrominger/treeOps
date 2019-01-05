@@ -1,0 +1,38 @@
+
+# ---------------------  dataBase 内存储的字段信息 ----------------------
+# dev stage: only deal with OHLC
+d5: ['open', 'high', 'low', 'close', 'oi', 'volume','allTradeDate', 'hourMinute']
+d10: ['open', 'high', 'low', 'close', 'oi', 'volume','allTradeDate', 'hourMinute']
+d30: ['open', 'high', 'low', 'close', 'oi', 'volume','allTradeDate', 'hourMinute']
+dd: ['open', 'high', 'low', 'close', 'oi', 'volume','allTradeDate']
+
+
+# dev stage: only deal with OHLC
+d5:
+   var0: ['open', 'high', 'low', 'close', 'oi', 'volume']
+   var1: ['allTradeDate', 'hourMinute']
+   var2:
+   memo: 'THIS IS THE MEMO FOR THIS DATASET.'
+
+d10:
+   var0: ['open', 'high', 'low', 'close', 'oi', 'volume','allTradeDate', 'hourMinute']
+
+d30:
+   var0: ['open', 'high', 'low', 'close', 'oi', 'volume',]
+   var1: ['allTradeDate', 'hourMinute']
+
+dd:
+  var0: ['open', 'high', 'low', 'close', 'oi', 'volume',]
+  var1: ['allTradeDate']
+
+dd_:
+  var0: # 这种写法显式地指定了变量量纲
+    open: 4
+    close: 4
+    oi: 2
+    low: 4
+    high: 4
+    volume: 2
+  var1:
+    allTradeDate: 1
+    hourMinute: 1

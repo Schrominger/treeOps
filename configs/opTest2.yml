@@ -1,0 +1,69 @@
+op1: # opName
+    info: [2172, 1177] # 此字段用于前后两个算符接口匹配判断
+
+    # DETAILS
+    input:
+      var0: # first-class argument
+          A: ['Open', 'Close', 'High', 'Low']
+          B: ['Volum', 'oi']
+      var1: # second-class argument
+          allTradeDate: ['allTradeDate', 'hourMinute']
+      var2: # third-class argument
+          #  冒号解析为range?
+          window: [5, 10, 15, 20, 25, 30, 35, 40, 45]
+          method: ['std', 'mean', 'max','min']
+    output:
+      var0: ['Aprime', 'Bprime']
+      var1:
+    # add more attributes for this op, such as dimension, symmetry of input vars..
+
+#  ---------ANOTHER OPERATOR --------
+op2: # opName
+    info: [1172, 2177]
+    var0: # first-class argument
+        A: ['Open', 'Close', 'High', 'Low','Volum', 'oi']
+    var1: None # 写不写None效果一样,表示没有这个变量
+
+    var2: # third-class argument
+        window: [5, 10, 15, 20, 25, 30, 35, 40, 45]
+        method: ['std', 'mean', 'max','min']
+        needDate: [True, False]
+    var3:
+
+op3: # opName
+    info: [1172, 1177]
+    var0: # first-class argument
+        A: ['Open', 'Close', 'High', 'Low','Volum', 'oi']
+    var1: None # 写不写None效果一样,表示没有这个变量
+
+    var2: # third-class argument
+        window: [5, 10, 15, 20, 25, 30, 35, 40, 45]
+        method: ['std', 'mean', 'max','min']
+        needDate: [True, False]
+    var3:
+    
+op4: # opName
+    info: [1172, 3177]
+    var0: # first-class argument
+        A: ['Open', 'Close', 'High', 'Low','Volum', 'oi']
+    var1: None # 写不写None效果一样,表示没有这个变量
+
+    var2: # third-class argument
+        window: [5, 10, 15, 20, 25, 30, 35, 40, 45]
+        method: ['std', 'mean', 'max','min']
+        needDate: [True, False]
+    var3:
+    
+op5: # opName
+    info: [3172, 2177]
+    var0: # first-class argument
+        A: ['Open', 'Close', 'High', 'Low','Volum', 'oi']
+    var1: None # 写不写None效果一样,表示没有这个变量
+
+    var2: # third-class argument
+        window: [5, 10, 15, 20, 25, 30, 35, 40, 45]
+        method: ['std', 'mean', 'max','min']
+        needDate: [True, False]
+    var3:
+
+    
